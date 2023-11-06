@@ -56,7 +56,7 @@ connectionSpecification:
       title: Netsuite Input Date Format
       description: The date format used in Netsuite API queries.
       order: 6
-      default: "%m/%d/%Y"
+      default: "%Y-%m-%d"
     start_datetime:
       type: string
       title: Start Date
