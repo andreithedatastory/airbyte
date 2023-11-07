@@ -158,13 +158,14 @@ class SourceNetsuite(AbstractSource):
 
         input_args = {"session": session, "metadata_url": metadata_url}
         schemas = self.get_schemas(object_names, **input_args)
+        print(str(config))
         input_args.update(
             **{
                 "auth": auth,
                 "base_url": base_url,
                 "start_datetime": config["start_datetime"],
                 "window_in_days": config["window_in_days"],
-                "netsuite_input_date_format": config["netsuite_input_date_format"],
+                "netsuite_input_date_format": config["netsuite_input_dateformat"],
                 "schemas": schemas,
             }
         )
