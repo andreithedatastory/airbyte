@@ -38,6 +38,6 @@ SCHEMA_HEADERS: dict = {"Accept": "application/schema+json"}
 INCREMENTAL_CURSOR: str = "lastModifiedDate"
 CUSTOM_INCREMENTAL_CURSOR: str = "lastmodified"
 
-
-NETSUITE_INPUT_DATE_FORMATS: list[str] = ["%m/%d/%Y", "%Y-%m-%d"]
+DEFAULT_NETSUITE_INPUT_DATE_FORMAT: str = "%m/%d/%Y"
+# NETSUITE_INPUT_DATE_FORMATS: list[str] = ["%m/%d/%Y", "%Y-%m-%d", "%d.%m.%Y"] 
 NETSUITE_OUTPUT_DATETIME_FORMAT: str = "%Y-%m-%dT%H:%M:%SZ"
